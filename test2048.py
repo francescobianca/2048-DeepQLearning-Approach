@@ -26,7 +26,7 @@ from processors2048 import OneHotNNInputProcessor
 ENV_NAME = '2048'
 env = Game2048Env()
 
-NB_STEPS_TRAINING = int(5e4)
+NB_STEPS_TRAINING = int(5e5)
 
 path = ''
 data_filepath = 'data/'
@@ -65,4 +65,4 @@ with open(csv_filepath, 'w', newline='') as file:
     writer = csv.writer(file, quoting=csv.QUOTE_NONNUMERIC, delimiter=';')
     writer.writerow(['episode', 'episode_steps', 'highest_score', 'max_tile'])
 _callbacks = [TestCall2048(csv_filepath)] 
-dqn.test(env, nb_episodes=300, visualize=True, verbose=0, callbacks=_callbacks)
+dqn.test(env, nb_episodes=500, visualize=False, verbose=1, callbacks=_callbacks)

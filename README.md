@@ -6,7 +6,7 @@ Implementing an agent for the 2048 game using a reinforcment learning approach.
 *Work in progress*
 
 versioni specifiche utilizzate
-- keras 2.2.0
+- keras 2.2.0 (installare dopo tensorflow e keras-rl)
 - tensorflow 1.14.0
 - keras-rl
 - gym

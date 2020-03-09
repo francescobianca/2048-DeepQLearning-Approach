@@ -1,4 +1,4 @@
-episode,episode_steps,episode_reward,max_tile"
+episode,episode_steps,highest_score,max_tile
 0,196,2632.0,256
 1,289,2948.0,256
 2,1441,7032.0,512

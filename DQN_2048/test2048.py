@@ -6,7 +6,7 @@ import csv
 import numpy as np
 import random
 
-from game2048 import Game2048Env # logica del gioco 2048
+from DQN_2048.game2048 import Game2048Env # logica del gioco 2048
 
 from keras.models import Sequential, Model, load_model
 from keras.layers import Dense, Conv2D, Flatten, Input
@@ -19,8 +19,8 @@ from rl.policy import EpsGreedyQPolicy, LinearAnnealedPolicy, GreedyQPolicy
 from rl.memory import SequentialMemory
 from rl.callbacks import FileLogger
 
-from callbacks2048 import TestCall2048
-from processors2048 import OneHotNNInputProcessor
+from DQN_2048.callbacks2048 import TestCall2048
+from DQN_2048.processors2048 import OneHotNNInputProcessor
 
 # Create the environment for the DQN agent:
 ENV_NAME = '2048'

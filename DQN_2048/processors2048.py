@@ -1,5 +1,5 @@
 import numpy as np
-from game2048 import Game2048Env
+from DQN_2048.game2048 import Game2048Env
 from rl.core import Processor
 
     

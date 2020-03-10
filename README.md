@@ -16,4 +16,15 @@ Requirements
 
 Graphic Interface: visualize=True in test/fit
 
-Evaluation:
+<h1>Evaluation:</h1>
+<h3>Training results with 5 millions steps</h3>
+
+![alt text](https://github.com/francescobianca/2048-DeepQLearning-Approach/blob/master/imagesEvaluation/train5milioni.png "Training results with 5 millions steps")
+
+<h3>Training results with 5.000 steps</h3>
+
+![alt text](https://github.com/francescobianca/2048-DeepQLearning-Approach/blob/master/imagesEvaluation/df5milaTrain.png "Dataframe 5.000 training steps")
+
+<h3>Training results with 5.000.000 steps</h3>
+
+![alt text](https://github.com/francescobianca/2048-DeepQLearning-Approach/blob/master/imagesEvaluation/df5milioniTrain.png "Dataframe 5.000.000 training steps")

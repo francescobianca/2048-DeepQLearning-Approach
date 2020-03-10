@@ -3,6 +3,9 @@ Project for the Machine Learning course - La Sapienza Università di Roma
 
 Implementing an agent for the 2048 game using a reinforcment learning approach. 
 
+![](2048.gif)
+
+
 *Work in progress*
 
 versioni specifiche utilizzate

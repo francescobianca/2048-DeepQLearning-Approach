@@ -25,7 +25,7 @@ def AI_2048(trained_model, threshold, test_active):
     value = 0
     train_data = []
     episode = 0
-    for each_game_ in range(200):
+    for each_game_ in range(500):
         episode += 1
         score = 0
         game_memory = []
@@ -86,7 +86,7 @@ def AI_2048(trained_model, threshold, test_active):
     scores.append(value)
     return train_data
 
-nb_train = 50
+nb_train = 5
 trained_data = model_data_preparation()
 for x in range(nb_train):
     if x+1 < nb_train:

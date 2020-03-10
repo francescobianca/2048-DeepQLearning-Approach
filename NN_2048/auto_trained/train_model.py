@@ -17,5 +17,5 @@ def train_model(training_data):
     y = np.array([i[1] for i in training_data])
     model = build_model()
 
-    model.fit(X, y, epochs=100)
+    model.fit(X, y, epochs=500)
     return model

@@ -1,15 +1,16 @@
 import random
 from tkinter import Frame, Label, CENTER
-
+import os
 import logic
 import constants as c
+import numpy as np
 
-def transform_key(key):
-    if key == 'a':
+def transform_key(mossa):
+    if mossa == 'a':
         return [1, 0, 0, 0]
-    elif key == 'w':
+    elif mossa == "w":
         return [0, 1, 0, 0]
-    elif key == 'd':
+    elif mossa == "d":
         return [0, 0, 1, 0]
     else:
         return [0, 0, 0, 1]
@@ -87,8 +88,9 @@ class GameGrid(Frame):
             self.update_grid_cells()
             print('back on step total step:', len(self.history_matrixs))
         elif key in self.commands:
-            mossa = transform_key(key)
-            print([self.matrix])
+            mossa = transform_key(str(key[1]))
+            print(mossa)
+            stato_azione.append([np.array(self.matrix), [mossa]])
             self.matrix, done = self.commands[repr(event.char)](self.matrix)
             if done:
                 self.matrix = logic.add_two(self.matrix)
@@ -112,4 +114,14 @@ class GameGrid(Frame):
             index = (self.gen(), self.gen())
         self.matrix[index[0]][index[1]] = 2
 
+stato_azione = []
 gamegrid = GameGrid()
+count = 0
+while True:
+    filepath = 'giocata'+str(count)+'.npy'
+    if os.path.exists(filepath):
+        count += 1
+    else:
+        break
+np.save('giocata'+str(count), [stato_azione])
+print("gioco salvato correttamente!")

@@ -15,7 +15,7 @@ import sys
 from numpy import savetxt
 
 from tkinter import Frame, Label, CENTER, Tk
-import constants as c
+from NN_2048 import constants as c
 
 def pairwise(iterable):
     "s -> (s0,s1), (s1,s2), (s2, s3), ..."

@@ -1,6 +1,6 @@
 import gym
-from game2048 import Game2048Env  # logica del gioco 2048
-from train_model import train_model
+from NN_2048.game2048 import Game2048Env  # logica del gioco 2048
+from human_train_model import train_model
 import numpy as np
 import os
 import csv

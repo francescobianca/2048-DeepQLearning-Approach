@@ -1,8 +1,8 @@
 import random
 from tkinter import Frame, Label, CENTER
 import os
-import logic
-import constants as c
+from NN_2048 import logic
+from NN_2048 import constants as c
 import numpy as np
 
 def transform_key(mossa):

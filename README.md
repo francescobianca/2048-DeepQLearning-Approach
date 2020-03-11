@@ -5,6 +5,8 @@ Implementing an agent for the 2048 game using a reinforcement learning approach.
 
 ![](2048.gif)
 
+Let's see in action: https://youtu.be/swc_otVJJrA
+
 Requirements 
 * tensorflow==1.14.0
 * keras-rl
